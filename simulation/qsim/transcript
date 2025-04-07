@@ -1,0 +1,56 @@
+# do MIC1.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder_2x4
+# 
+# Top level modules:
+# 	decoder_2x4
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder_2x4_vlg_sample_tst
+# -- Compiling module decoder_2x4_vlg_check_tst
+# ** Error: MIC1.vt(60): near "00": syntax error, unexpected INTEGER NUMBER, expecting ')'
+# ** Error: MIC1.vt(72): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(73): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(74): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(75): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(82): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(83): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(84): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(85): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(122): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(122): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(123): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(123): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(124): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(124): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(125): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(125): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(133): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(139): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(145): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(151): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(154): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(154): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(154): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(154): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(168): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(168): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(169): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(174): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(178): near "00e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(181): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(181): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(182): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(187): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(191): near "01e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(194): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(194): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(195): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(200): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(204): near "02e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(207): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(207): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(208): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(213): near "03e": Digits must follow 'E' character in real.
+# ** Error: MIC1.vt(217): near "03e": Digits must follow 'E' character in real.
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./MIC1.do line 4

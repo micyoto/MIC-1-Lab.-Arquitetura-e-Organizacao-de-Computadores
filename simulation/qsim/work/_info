@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Mandinha\simulation\qsim
+vdecoder_2x4
+Z1 IO?dAGiBB8j4?Q?7TYZ]G^3
+Z2 V?T=JZ4z@:@?dTb1G9>BOH3
+Z3 dC:\Users\Aluno\Mandinha\simulation\qsim
+Z4 w1728054934
+Z5 8MIC1.vo
+Z6 FMIC1.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 oBW<e_Q42djDBObbWlNJU0
+!s85 0
+Z10 !s108 1728054937.352000
+Z11 !s107 MIC1.vo|
+Z12 !s90 -work|work|MIC1.vo|
+!s101 -O0
+vdecoder_2x4_vlg_sample_tst
+!i10b 1
+!s100 9Jl>ddNX6PMnl5XmdVj]41
+I68A?IYQ;m<1gVNz>8c7Vb2
+VQ`hfT9bENWHRnQz=@8kn01
+R3
+w1728054932
+8MIC1.vt
+FMIC1.vt
+L0 29
+R7
+r1
+!s85 0
+31
+!s108 1728054937.623000
+!s107 MIC1.vt|
+!s90 -work|work|MIC1.vt|
+!s101 -O0
+R8
