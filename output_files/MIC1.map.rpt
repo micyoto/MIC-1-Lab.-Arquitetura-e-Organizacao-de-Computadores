@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIC1
-Fri Oct 04 12:13:43 2024
+Wed Apr 09 12:16:08 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 04 12:13:43 2024           ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 09 12:16:08 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; MIC1                                            ;
-; Top-level Entity Name              ; decoder_2x4                                     ;
+; Top-level Entity Name              ; ula_1bit                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 3                                               ;
-;     Total combinational functions  ; 3                                               ;
+; Total logic elements               ; 7                                               ;
+;     Total combinational functions  ; 7                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 6                                               ;
+; Total pins                         ; 10                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; decoder_2x4        ; MIC1               ;
+; Top-level entity name                                                      ; ula_1bit           ; MIC1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -148,18 +148,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                      ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path            ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------+---------+
-; decoder_2x4.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Aluno/Mandinha/decoder_2x4.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; decoder_2x4.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/micha/Downloads/Mandinha/decoder_2x4.bdf      ;         ;
+; full_adder_16bit.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/micha/Downloads/Mandinha/full_adder_16bit.bdf ;         ;
+; logic_unit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/micha/Downloads/Mandinha/logic_unit.bdf       ;         ;
+; ula_1bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/micha/Downloads/Mandinha/ula_1bit.bdf         ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -167,38 +170,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 3     ;
+; Estimated Total logic elements              ; 7     ;
 ;                                             ;       ;
-; Total combinational functions               ; 3     ;
+; Total combinational functions               ; 7     ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 3     ;
+;     -- 4 input functions                    ; 4     ;
+;     -- 3 input functions                    ; 1     ;
+;     -- <=2 input functions                  ; 2     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 3     ;
+;     -- normal mode                          ; 7     ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 6     ;
+; I/O pins                                    ; 10    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; I1    ;
+; Maximum fan-out node                        ; inst2 ;
 ; Maximum fan-out                             ; 3     ;
-; Total fan-out                               ; 10    ;
-; Average fan-out                             ; 1.11  ;
+; Total fan-out                               ; 25    ;
+; Average fan-out                             ; 1.47  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |decoder_2x4               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |decoder_2x4        ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Library Name ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
+; |ula_1bit                   ; 7 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |ula_1bit                        ; work         ;
+;    |full_adder_16bit:inst5| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ula_1bit|full_adder_16bit:inst5 ; work         ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -232,22 +236,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 04 12:13:42 2024
+    Info: Processing started: Wed Apr 09 12:16:06 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIC1 -c MIC1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file decoder_2x4.bdf
     Info (12023): Found entity 1: decoder_2x4
-Info (12127): Elaborating entity "decoder_2x4" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder_16bit.bdf
+    Info (12023): Found entity 1: full_adder_16bit
+Info (12021): Found 1 design units, including 1 entities, in source file logic_unit.bdf
+    Info (12023): Found entity 1: logic_unit
+Info (12021): Found 1 design units, including 1 entities, in source file ula_1bit.bdf
+    Info (12023): Found entity 1: ula_1bit
+Info (12127): Elaborating entity "ula_1bit" for the top level hierarchy
+Info (12128): Elaborating entity "logic_unit" for hierarchy "logic_unit:inst3"
+Info (12128): Elaborating entity "decoder_2x4" for hierarchy "decoder_2x4:inst4"
+Info (12128): Elaborating entity "full_adder_16bit" for hierarchy "full_adder_16bit:inst5"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 3 logic cells
+Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 7 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4583 megabytes
-    Info: Processing ended: Fri Oct 04 12:13:43 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4596 megabytes
+    Info: Processing ended: Wed Apr 09 12:16:08 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 
