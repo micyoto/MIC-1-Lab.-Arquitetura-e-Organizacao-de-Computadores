@@ -1,5 +1,5 @@
 Simulator report for MIC1
-Fri Oct 04 12:16:34 2024
+Wed Apr 09 12:23:27 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -38,49 +38,40 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------+
-; Simulator Summary                          ;
-+-----------------------------+--------------+
-; Type                        ; Value        ;
-+-----------------------------+--------------+
-; Simulation Start Time       ; 0 ps         ;
-; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 9 nodes      ;
-; Simulation Coverage         ;       0.00 % ;
-; Total Number of Transitions ; 0            ;
-; Simulation Breakpoints      ; 0            ;
-; Family                      ; Cyclone II   ;
-; Device                      ; EP2C5T144C6  ;
-+-----------------------------+--------------+
++-------------------+
+; Simulator Summary ;
++------+------------+
+; Type ; Value      ;
++------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                ;
-+--------------------------------------------------------------------------------------------+--------------------------------------+---------------+
-; Option                                                                                     ; Setting                              ; Default Value ;
-+--------------------------------------------------------------------------------------------+--------------------------------------+---------------+
-; Simulation mode                                                                            ; Timing                               ; Timing        ;
-; Start time                                                                                 ; 0 ns                                 ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                  ;               ;
-; Vector input source                                                                        ; C:/Users/Aluno/Mandinha/Waveform.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                   ; On            ;
-; Check outputs                                                                              ; Off                                  ; Off           ;
-; Report simulation coverage                                                                 ; On                                   ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                   ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                   ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                   ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                  ; Off           ;
-; Detect glitches                                                                            ; Off                                  ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                  ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                  ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                  ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                  ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                   ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                           ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                  ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                  ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                 ; Auto          ;
-+--------------------------------------------------------------------------------------------+--------------------------------------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                        ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                                           ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                            ;               ;
+; Vector input source                                                                        ; C:/Users/micha/Downloads/Mandinha/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                             ; On            ;
+; Check outputs                                                                              ; Off                                            ; Off           ;
+; Report simulation coverage                                                                 ; On                                             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                             ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                             ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                             ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                            ; Off           ;
+; Detect glitches                                                                            ; Off                                            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                            ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                           ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
 
 
 +----------------------+
@@ -90,19 +81,11 @@ Waveform report data cannot be output to ASCII.
 Please use Quartus II 64-Bit to view the waveform report data.
 
 
-+--------------------------------------------------------------------+
-; Coverage Summary                                                   ;
-+-----------------------------------------------------+--------------+
-; Type                                                ; Value        ;
-+-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;       0.00 % ;
-; Total nodes checked                                 ; 9            ;
-; Total output ports checked                          ; 9            ;
-; Total output ports with complete 1/0-value coverage ; 0            ;
-; Total output ports with no 1/0-value coverage       ; 9            ;
-; Total output ports with no 1-value coverage         ; 9            ;
-; Total output ports with no 0-value coverage         ; 9            ;
-+-----------------------------------------------------+--------------+
++------------------+
+; Coverage Summary ;
++------+-----------+
+; Type ; Value     ;
++------+-----------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
@@ -114,39 +97,19 @@ The following table displays output ports that toggle between 1 and 0 during sim
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+----------------------------------------------------------------+
-; Missing 1-Value Coverage                                       ;
-+--------------------+------------------------+------------------+
-; Node Name          ; Output Port Name       ; Output Port Type ;
-+--------------------+------------------------+------------------+
-; |decoder_2x4|inst  ; |decoder_2x4|inst      ; combout          ;
-; |decoder_2x4|inst1 ; |decoder_2x4|inst1     ; combout          ;
-; |decoder_2x4|inst3 ; |decoder_2x4|inst3     ; combout          ;
-; |decoder_2x4|00    ; |decoder_2x4|00        ; padio            ;
-; |decoder_2x4|01    ; |decoder_2x4|01        ; padio            ;
-; |decoder_2x4|02    ; |decoder_2x4|02        ; padio            ;
-; |decoder_2x4|03    ; |decoder_2x4|03        ; padio            ;
-; |decoder_2x4|I1    ; |decoder_2x4|I1~corein ; combout          ;
-; |decoder_2x4|I0    ; |decoder_2x4|I0~corein ; combout          ;
-+--------------------+------------------------+------------------+
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+----------------------------------------------------------------+
-; Missing 0-Value Coverage                                       ;
-+--------------------+------------------------+------------------+
-; Node Name          ; Output Port Name       ; Output Port Type ;
-+--------------------+------------------------+------------------+
-; |decoder_2x4|inst  ; |decoder_2x4|inst      ; combout          ;
-; |decoder_2x4|inst1 ; |decoder_2x4|inst1     ; combout          ;
-; |decoder_2x4|inst3 ; |decoder_2x4|inst3     ; combout          ;
-; |decoder_2x4|00    ; |decoder_2x4|00        ; padio            ;
-; |decoder_2x4|01    ; |decoder_2x4|01        ; padio            ;
-; |decoder_2x4|02    ; |decoder_2x4|02        ; padio            ;
-; |decoder_2x4|03    ; |decoder_2x4|03        ; padio            ;
-; |decoder_2x4|I1    ; |decoder_2x4|I1~corein ; combout          ;
-; |decoder_2x4|I0    ; |decoder_2x4|I0~corein ; combout          ;
-+--------------------+------------------------+------------------+
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 +---------------------+
@@ -162,19 +125,14 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 04 12:16:33 2024
+    Info: Processing started: Wed Apr 09 12:23:27 2025
 Info: Command: quartus_sim --simulation_results_format=VWF MIC1 -c MIC1
-Info (324025): Using vector source file "C:/Users/Aluno/Mandinha/Waveform.vwf"
-Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
-    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
-Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is       0.00 %
-Info (328052): Number of transitions in simulation is 0
-Info (324045): Vector file MIC1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4471 megabytes
-    Info: Processing ended: Fri Oct 04 12:16:34 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info (324025): Using vector source file "C:/Users/micha/Downloads/Mandinha/Waveform.vwf"
+Error (328002): Can't continue timing simulation because delay annotation information for design is missing
+Error: Quartus II 64-Bit Simulator was unsuccessful. 1 error, 0 warnings
+    Error: Peak virtual memory: 4445 megabytes
+    Error: Processing ended: Wed Apr 09 12:23:27 2025
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:00
 
 
