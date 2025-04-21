@@ -18,32 +18,38 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/09/2025 09:15:30"
+// Generated on "04/21/2025 13:09:58"
                                                                         
-// Verilog Self-Checking Test Bench (with test vectors) for design :    logic_unit
+// Verilog Self-Checking Test Bench (with test vectors) for design :    ula_1bit
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module logic_unit_vlg_sample_tst(
-	EN0,
-	EN1,
-	EN2,
-	I0,
-	I1,
+module ula_1bit_vlg_sample_tst(
+	A,
+	B,
+	CIN,
+	ENA,
+	ENB,
+	F0,
+	F1,
+	INVA,
 	sampler_tx
 );
-input  EN0;
-input  EN1;
-input  EN2;
-input  I0;
-input  I1;
+input  A;
+input  B;
+input  CIN;
+input  ENA;
+input  ENB;
+input  F0;
+input  F1;
+input  INVA;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(EN0 or EN1 or EN2 or I0 or I1)
+always @(A or B or CIN or ENA or ENB or F0 or F1 or INVA)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -62,51 +68,31 @@ end
 assign sampler_tx = sample;
 endmodule
 
-module logic_unit_vlg_check_tst (
-	01,
-	02,
-	O0,
-	S0,
-	S1,
+module ula_1bit_vlg_check_tst (
+	COUT,
+	OUT,
 	sampler_rx
 );
-input  01;
-input  02;
-input  O0;
-input  S0;
-input  S1;
+input  COUT;
+input  OUT;
 input sampler_rx;
 
-reg  01_expected;
-reg  02_expected;
-reg  O0_expected;
-reg  S0_expected;
-reg  S1_expected;
+reg  COUT_expected;
+reg  OUT_expected;
 
-reg  01_prev;
-reg  02_prev;
-reg  O0_prev;
-reg  S0_prev;
-reg  S1_prev;
+reg  COUT_prev;
+reg  OUT_prev;
 
-reg  01_expected_prev;
-reg  02_expected_prev;
-reg  O0_expected_prev;
-reg  S0_expected_prev;
-reg  S1_expected_prev;
+reg  COUT_expected_prev;
 
-reg  last_01_exp;
-reg  last_02_exp;
-reg  last_O0_exp;
-reg  last_S0_exp;
-reg  last_S1_exp;
+reg  last_COUT_exp;
 
 reg trigger;
 
 integer i;
 integer nummismatches;
 
-reg [1:5] on_first_change ;
+reg [1:2] on_first_change ;
 
 
 initial
@@ -114,64 +100,42 @@ begin
 trigger = 0;
 i = 0;
 nummismatches = 0;
-on_first_change = 5'b1;
+on_first_change = 2'b1;
 end
 
 // update real /o prevs
 
 always @(trigger)
 begin
-	01_prev = 01;
-	02_prev = 02;
-	O0_prev = O0;
-	S0_prev = S0;
-	S1_prev = S1;
+	COUT_prev = COUT;
+	OUT_prev = OUT;
 end
 
 // update expected /o prevs
 
 always @(trigger)
 begin
-	01_expected_prev = 01_expected;
-	02_expected_prev = 02_expected;
-	O0_expected_prev = O0_expected;
-	S0_expected_prev = S0_expected;
-	S1_expected_prev = S1_expected;
+	COUT_expected_prev = COUT_expected;
 end
 
 
 
-// expected 01
+// expected COUT
 initial
 begin
-	01_expected = 1'bX;
-end 
-
-// expected 02
-initial
-begin
-	02_expected = 1'bX;
-end 
-
-// expected O0
-initial
-begin
-	O0_expected = 1'bX;
-end 
-
-// expected S0
-initial
-begin
-	S0_expected = 1'bX;
-end 
-
-// expected S1
-initial
-begin
-	S1_expected = 1'bX;
+	COUT_expected = 1'b0;
+	COUT_expected = #1205917 1'b1;
+	COUT_expected = #89 1'b0;
+	COUT_expected = #300000 1'b1;
+	COUT_expected = #100000 1'b0;
+	COUT_expected = #3338 1'b1;
+	COUT_expected = #496 1'b0;
+	COUT_expected = #96166 1'b1;
+	COUT_expected = #100000 1'b0;
+	COUT_expected = #3834 1'b1;
 end 
 // generate trigger
-always @(01_expected or 01 or 02_expected or 02 or O0_expected or O0 or S0_expected or S0 or S1_expected or S1)
+always @(COUT_expected or COUT or OUT_expected or OUT)
 begin
 	trigger <= ~trigger;
 end
@@ -181,73 +145,21 @@ begin
 `ifdef debug_tbench
 	$display("Scanning pattern %d @time = %t",i,$realtime );
 	i = i + 1;
-	$display("| expected 01 = %b | expected 02 = %b | expected O0 = %b | expected S0 = %b | expected S1 = %b | ",01_expected_prev,02_expected_prev,O0_expected_prev,S0_expected_prev,S1_expected_prev);
-	$display("| real 01 = %b | real 02 = %b | real O0 = %b | real S0 = %b | real S1 = %b | ",01_prev,02_prev,O0_prev,S0_prev,S1_prev);
+	$display("| expected COUT = %b | expected OUT = %b | ",COUT_expected_prev,OUT_expected_prev);
+	$display("| real COUT = %b | real OUT = %b | ",COUT_prev,OUT_prev);
 `endif
 	if (
-		( 01_expected_prev !== 1'bx ) && ( 01_prev !== 01_expected_prev )
-		&& ((01_expected_prev !== last_01_exp) ||
+		( COUT_expected_prev !== 1'bx ) && ( COUT_prev !== COUT_expected_prev )
+		&& ((COUT_expected_prev !== last_COUT_exp) ||
 			on_first_change[1])
 	)
 	begin
-		$display ("ERROR! Vector Mismatch for output port 01 :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", 01_expected_prev);
-		$display ("     Real value = %b", 01_prev);
+		$display ("ERROR! Vector Mismatch for output port COUT :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", COUT_expected_prev);
+		$display ("     Real value = %b", COUT_prev);
 		nummismatches = nummismatches + 1;
 		on_first_change[1] = 1'b0;
-		last_01_exp = 01_expected_prev;
-	end
-	if (
-		( 02_expected_prev !== 1'bx ) && ( 02_prev !== 02_expected_prev )
-		&& ((02_expected_prev !== last_02_exp) ||
-			on_first_change[2])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port 02 :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", 02_expected_prev);
-		$display ("     Real value = %b", 02_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[2] = 1'b0;
-		last_02_exp = 02_expected_prev;
-	end
-	if (
-		( O0_expected_prev !== 1'bx ) && ( O0_prev !== O0_expected_prev )
-		&& ((O0_expected_prev !== last_O0_exp) ||
-			on_first_change[3])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port O0 :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", O0_expected_prev);
-		$display ("     Real value = %b", O0_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[3] = 1'b0;
-		last_O0_exp = O0_expected_prev;
-	end
-	if (
-		( S0_expected_prev !== 1'bx ) && ( S0_prev !== S0_expected_prev )
-		&& ((S0_expected_prev !== last_S0_exp) ||
-			on_first_change[4])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port S0 :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", S0_expected_prev);
-		$display ("     Real value = %b", S0_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[4] = 1'b0;
-		last_S0_exp = S0_expected_prev;
-	end
-	if (
-		( S1_expected_prev !== 1'bx ) && ( S1_prev !== S1_expected_prev )
-		&& ((S1_expected_prev !== last_S1_exp) ||
-			on_first_change[5])
-	)
-	begin
-		$display ("ERROR! Vector Mismatch for output port S1 :: @time = %t",  $realtime);
-		$display ("     Expected value = %b", S1_expected_prev);
-		$display ("     Real value = %b", S1_prev);
-		nummismatches = nummismatches + 1;
-		on_first_change[5] = 1'b0;
-		last_S1_exp = S1_expected_prev;
+		last_COUT_exp = COUT_expected_prev;
 	end
 
 	trigger <= ~trigger;
@@ -256,7 +168,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#1000000;
+#2000000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -265,87 +177,140 @@ $finish;
 end 
 endmodule
 
-module logic_unit_vlg_vec_tst();
+module ula_1bit_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg EN0;
-reg EN1;
-reg EN2;
-reg I0;
-reg I1;
+reg A;
+reg B;
+reg CIN;
+reg ENA;
+reg ENB;
+reg F0;
+reg F1;
+reg INVA;
 // wires                                               
-wire 01;
-wire 02;
-wire O0;
-wire S0;
-wire S1;
+wire COUT;
+wire OUT;
 
 wire sampler;                             
 
 // assign statements (if any)                          
-logic_unit i1 (
+ula_1bit i1 (
 // port map - connection between master ports and signals/registers   
-	.\01 (01),
-	.\02 (02),
-	.EN0(EN0),
-	.EN1(EN1),
-	.EN2(EN2),
-	.I0(I0),
-	.I1(I1),
-	.O0(O0),
-	.S0(S0),
-	.S1(S1)
+	.A(A),
+	.B(B),
+	.CIN(CIN),
+	.COUT(COUT),
+	.ENA(ENA),
+	.ENB(ENB),
+	.F0(F0),
+	.F1(F1),
+	.INVA(INVA),
+	.OUT(OUT)
 );
 
-// EN0
+// F0
 initial
 begin
-	EN0 = 1'b1;
+	F0 = 1'b0;
+	F0 = #800000 1'b1;
 end 
 
-// EN1
+// F1
 initial
 begin
-	EN1 = 1'b0;
+	F1 = 1'b0;
+	F1 = #400000 1'b1;
+	F1 = #400000 1'b0;
+	F1 = #400000 1'b1;
 end 
 
-// EN2
+// INVA
 initial
 begin
-	EN2 = 1'b0;
+	INVA = 1'b0;
 end 
 
-// I0
-always
+// CIN
+initial
 begin
-	I0 = 1'b0;
-	I0 = #250000 1'b1;
-	#250000;
+	CIN = 1'b0;
+	CIN = #1600000 1'b1;
 end 
 
-// I1
-always
+// A
+initial
 begin
-	I1 = 1'b0;
-	I1 = #125000 1'b1;
-	#125000;
+	A = 1'b0;
+	A = #200000 1'b1;
+	A = #200000 1'b0;
+	A = #200000 1'b1;
+	A = #200000 1'b0;
+	A = #200000 1'b1;
+	# 200000;
+	repeat(2)
+	begin
+		A = 1'b0;
+		A = #200000 1'b1;
+		# 200000;
+	end
 end 
 
-logic_unit_vlg_sample_tst tb_sample (
-	.EN0(EN0),
-	.EN1(EN1),
-	.EN2(EN2),
-	.I0(I0),
-	.I1(I1),
+// B
+initial
+begin
+	repeat(2)
+	begin
+		B = 1'b0;
+		B = #100000 1'b1;
+		# 100000;
+	end
+	repeat(2)
+	begin
+		B = 1'b0;
+		B = #100000 1'b1;
+		# 100000;
+	end
+	B = 1'b0;
+	B = #100000 1'b1;
+	B = #100000 1'b0;
+	B = #100000 1'b1;
+	# 100000;
+	repeat(4)
+	begin
+		B = 1'b0;
+		B = #100000 1'b1;
+		# 100000;
+	end
+end 
+
+// ENA
+initial
+begin
+	ENA = 1'b1;
+end 
+
+// ENB
+initial
+begin
+	ENB = 1'b1;
+end 
+
+ula_1bit_vlg_sample_tst tb_sample (
+	.A(A),
+	.B(B),
+	.CIN(CIN),
+	.ENA(ENA),
+	.ENB(ENB),
+	.F0(F0),
+	.F1(F1),
+	.INVA(INVA),
 	.sampler_tx(sampler)
 );
 
-logic_unit_vlg_check_tst tb_out(
-	.01(01),
-	.02(02),
-	.O0(O0),
-	.S0(S0),
-	.S1(S1),
+ula_1bit_vlg_check_tst tb_out(
+	.COUT(COUT),
+	.OUT(OUT),
 	.sampler_rx(sampler)
 );
 endmodule

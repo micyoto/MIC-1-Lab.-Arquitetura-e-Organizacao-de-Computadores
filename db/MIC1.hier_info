@@ -7,8 +7,8 @@ B => inst.IN0
 ENB => inst.IN1
 F0 => decoder_2x4:inst4.I0
 F1 => decoder_2x4:inst4.I1
-CIN => full_adder_16bit:inst5.CIN
-COUT <= full_adder_16bit:inst5.COUT
+CIN => full_adder_1bit:inst5.CIN
+COUT <= full_adder_1bit:inst5.COUT
 
 
 |ula_1bit|logic_unit:inst3
@@ -44,7 +44,7 @@ I0 => inst2.IN1
 02 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ula_1bit|full_adder_16bit:inst5
+|ula_1bit|full_adder_1bit:inst5
 COUT <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 A => inst9.IN0
 A => inst.IN0
