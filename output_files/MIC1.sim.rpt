@@ -1,5 +1,5 @@
 Simulator report for MIC1
-Mon Apr 21 13:10:11 2025
+Mon Apr 21 13:39:17 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,43 +44,43 @@ applicable agreement for further details.
 ; Type                        ; Value        ;
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
-; Simulation End Time         ; 2.0 us       ;
-; Simulation Netlist Size     ; 17 nodes     ;
-; Simulation Coverage         ;      64.71 % ;
-; Total Number of Transitions ; 165          ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 8 nodes      ;
+; Simulation Coverage         ;      75.00 % ;
+; Total Number of Transitions ; 43           ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 ; Device                      ; EP2C5T144C6  ;
 +-----------------------------+--------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                          ;
-+--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                        ; Default Value ;
-+--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Timing                                         ; Timing        ;
-; Start time                                                                                 ; 0 ns                                           ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                            ;               ;
-; Vector input source                                                                        ; C:/Users/micha/Downloads/Mandinha/ULA_1bit.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                             ; On            ;
-; Check outputs                                                                              ; Off                                            ; Off           ;
-; Report simulation coverage                                                                 ; On                                             ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                             ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                             ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                             ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                            ; Off           ;
-; Detect glitches                                                                            ; Off                                            ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                            ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                            ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                            ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                            ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                             ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                     ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                            ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                            ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                           ; Auto          ;
-+--------------------------------------------------------------------------------------------+------------------------------------------------+---------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                               ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                                ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                   ;               ;
+; Vector input source                                                                        ; C:/Users/micha/Downloads/Mandinha/full_adder_1bit.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                    ; On            ;
+; Check outputs                                                                              ; Off                                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------+---------------+
 
 
 +----------------------+
@@ -95,61 +95,50 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      64.71 % ;
-; Total nodes checked                                 ; 17           ;
-; Total output ports checked                          ; 17           ;
-; Total output ports with complete 1/0-value coverage ; 11           ;
-; Total output ports with no 1/0-value coverage       ; 3            ;
-; Total output ports with no 1-value coverage         ; 3            ;
-; Total output ports with no 0-value coverage         ; 6            ;
+; Total coverage as a percentage                      ;      75.00 % ;
+; Total nodes checked                                 ; 8            ;
+; Total output ports checked                          ; 8            ;
+; Total output ports with complete 1/0-value coverage ; 6            ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 2            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+----------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                        ;
-+----------------------------------------+----------------------------------------+------------------+
-; Node Name                              ; Output Port Name                       ; Output Port Type ;
-+----------------------------------------+----------------------------------------+------------------+
-; |ula_1bit|inst2                        ; |ula_1bit|inst2                        ; combout          ;
-; |ula_1bit|inst                         ; |ula_1bit|inst                         ; combout          ;
-; |ula_1bit|inst7~2                      ; |ula_1bit|inst7~2                      ; combout          ;
-; |ula_1bit|inst7~3                      ; |ula_1bit|inst7~3                      ; combout          ;
-; |ula_1bit|full_adder_1bit:inst5|inst11 ; |ula_1bit|full_adder_1bit:inst5|inst11 ; combout          ;
-; |ula_1bit|inst7~4                      ; |ula_1bit|inst7~4                      ; combout          ;
-; |ula_1bit|OUT                          ; |ula_1bit|OUT                          ; padio            ;
-; |ula_1bit|COUT                         ; |ula_1bit|COUT                         ; padio            ;
-; |ula_1bit|A                            ; |ula_1bit|A~corein                     ; combout          ;
-; |ula_1bit|B                            ; |ula_1bit|B~corein                     ; combout          ;
-; |ula_1bit|F1                           ; |ula_1bit|F1~corein                    ; combout          ;
-+----------------------------------------+----------------------------------------+------------------+
++--------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                              ;
++-------------------------+-----------------------------+------------------+
+; Node Name               ; Output Port Name            ; Output Port Type ;
++-------------------------+-----------------------------+------------------+
+; |full_adder_1bit|inst11 ; |full_adder_1bit|inst11     ; combout          ;
+; |full_adder_1bit|inst8  ; |full_adder_1bit|inst8      ; combout          ;
+; |full_adder_1bit|COUT   ; |full_adder_1bit|COUT       ; padio            ;
+; |full_adder_1bit|O      ; |full_adder_1bit|O          ; padio            ;
+; |full_adder_1bit|B      ; |full_adder_1bit|B~corein   ; combout          ;
+; |full_adder_1bit|CIN    ; |full_adder_1bit|CIN~corein ; combout          ;
++-------------------------+-----------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+-----------------------------------------------------------+
-; Missing 1-Value Coverage                                  ;
-+----------------+-----------------------+------------------+
-; Node Name      ; Output Port Name      ; Output Port Type ;
-+----------------+-----------------------+------------------+
-; |ula_1bit|INVA ; |ula_1bit|INVA~corein ; combout          ;
-; |ula_1bit|ENA  ; |ula_1bit|ENA~corein  ; combout          ;
-; |ula_1bit|ENB  ; |ula_1bit|ENB~corein  ; combout          ;
-+----------------+-----------------------+------------------+
++---------------------------------------------------------------------+
+; Missing 1-Value Coverage                                            ;
++---------------------+----------------------------+------------------+
+; Node Name           ; Output Port Name           ; Output Port Type ;
++---------------------+----------------------------+------------------+
+; |full_adder_1bit|EN ; |full_adder_1bit|EN~corein ; combout          ;
++---------------------+----------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                             ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; Node Name                               ; Output Port Name                        ; Output Port Type ;
-+-----------------------------------------+-----------------------------------------+------------------+
-; |ula_1bit|full_adder_1bit:inst5|inst9~0 ; |ula_1bit|full_adder_1bit:inst5|inst9~0 ; combout          ;
-; |ula_1bit|INVA                          ; |ula_1bit|INVA~corein                   ; combout          ;
-; |ula_1bit|ENA                           ; |ula_1bit|ENA~corein                    ; combout          ;
-; |ula_1bit|ENB                           ; |ula_1bit|ENB~corein                    ; combout          ;
-; |ula_1bit|F0                            ; |ula_1bit|F0~corein                     ; combout          ;
-; |ula_1bit|CIN                           ; |ula_1bit|CIN~corein                    ; combout          ;
-+-----------------------------------------+-----------------------------------------+------------------+
++---------------------------------------------------------------------+
+; Missing 0-Value Coverage                                            ;
++---------------------+----------------------------+------------------+
+; Node Name           ; Output Port Name           ; Output Port Type ;
++---------------------+----------------------------+------------------+
+; |full_adder_1bit|EN ; |full_adder_1bit|EN~corein ; combout          ;
+; |full_adder_1bit|A  ; |full_adder_1bit|A~corein  ; combout          ;
++---------------------+----------------------------+------------------+
 
 
 +---------------------+
@@ -165,111 +154,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 21 13:10:10 2025
+    Info: Processing started: Mon Apr 21 13:39:16 2025
 Info: Command: quartus_sim --simulation_results_format=VWF MIC1 -c MIC1
-Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
-Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
-Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
-Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
-Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
-Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
-Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
-Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
-Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
-Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
-Info (324025): Using vector source file "C:/Users/micha/Downloads/Mandinha/ULA_1bit.vwf"
-Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
-Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
-Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
-Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
-Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
-Warning (136002): Ignored duplicate of assignment HIERARCHY_BLACKBOX_FILE for node "|"
-Warning (136002): Ignored duplicate of assignment PARTITION_PRESERVE_HIGH_SPEED_TILES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IGNORE_SOURCE_FILE_CHANGES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ALWAYS_USE_QXP_NETLIST for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_NEW_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PIN_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_IMPORT_PROMOTE_ASSIGNMENTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_TYPE for node ""
-Warning (136002): Ignored duplicate of assignment ALLOW_MULTIPLE_PERSONAS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_ASD_REGION_ID for node ""
-Warning (136002): Ignored duplicate of assignment CROSS_BOUNDARY_OPTIMIZATIONS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_CONSTANTS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PROPAGATE_INVERSIONS_ON_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment MERGE_EQUIVALENT_BIDIRS for node ""
-Warning (136002): Ignored duplicate of assignment ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_EXTRACT_HARD_BLOCK_NODES for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_SOURCE for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_BACK_ANNOTATION for node ""
-Warning (136002): Ignored duplicate of assignment PARTITION_COLOR for node ""
-Warning (328013): Ignored node in vector source file. Can't find corresponding node name "OUTPUT" in design.
+Info (324025): Using vector source file "C:/Users/micha/Downloads/Mandinha/full_adder_1bit.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      64.71 %
-Info (328052): Number of transitions in simulation is 165
+Info (328053): Simulation coverage is      75.00 %
+Info (328052): Number of transitions in simulation is 43
 Info (324045): Vector file MIC1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II 64-Bit Simulator was successful. 0 errors, 93 warnings
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4476 megabytes
-    Info: Processing ended: Mon Apr 21 13:10:11 2025
+    Info: Processing ended: Mon Apr 21 13:39:17 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

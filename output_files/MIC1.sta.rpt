@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for MIC1
-Mon Apr 21 13:00:52 2025
+Mon Apr 21 13:38:12 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -121,52 +121,36 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------------+
-; Propagation Delay                                            ;
-+------------+-------------+--------+--------+--------+--------+
-; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+------------+-------------+--------+--------+--------+--------+
-; A          ; COUT        ; 9.840  ; 9.840  ; 9.840  ; 9.840  ;
-; A          ; OUT         ; 10.985 ; 10.985 ; 10.985 ; 10.985 ;
-; B          ; COUT        ; 6.006  ;        ;        ; 6.006  ;
-; B          ; OUT         ; 7.146  ; 7.146  ; 7.146  ; 7.146  ;
-; CIN        ; COUT        ; 9.344  ;        ;        ; 9.344  ;
-; CIN        ; OUT         ; 10.383 ; 10.383 ; 10.383 ; 10.383 ;
-; ENA        ; COUT        ; 5.702  ; 5.702  ; 5.702  ; 5.702  ;
-; ENA        ; OUT         ; 6.847  ; 6.847  ; 6.847  ; 6.847  ;
-; ENB        ; COUT        ; 6.155  ;        ;        ; 6.155  ;
-; ENB        ; OUT         ; 7.295  ; 7.295  ; 7.295  ; 7.295  ;
-; F0         ; COUT        ; 9.857  ;        ;        ; 9.857  ;
-; F0         ; OUT         ; 10.327 ; 10.327 ; 10.327 ; 10.327 ;
-; F1         ; COUT        ; 5.917  ;        ;        ; 5.917  ;
-; F1         ; OUT         ; 6.487  ; 6.487  ; 6.487  ; 6.487  ;
-; INVA       ; COUT        ; 9.615  ; 9.615  ; 9.615  ; 9.615  ;
-; INVA       ; OUT         ; 10.760 ; 10.760 ; 10.760 ; 10.760 ;
-+------------+-------------+--------+--------+--------+--------+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; COUT        ; 9.098 ;       ;       ; 9.098 ;
+; A          ; O           ; 9.236 ; 9.236 ; 9.236 ; 9.236 ;
+; B          ; COUT        ; 5.389 ;       ;       ; 5.389 ;
+; B          ; O           ; 5.528 ; 5.528 ; 5.528 ; 5.528 ;
+; CIN        ; COUT        ; 5.352 ;       ;       ; 5.352 ;
+; CIN        ; O           ; 5.487 ; 5.487 ; 5.487 ; 5.487 ;
+; EN         ; COUT        ; 9.181 ;       ;       ; 9.181 ;
+; EN         ; O           ; 9.320 ;       ;       ; 9.320 ;
++------------+-------------+-------+-------+-------+-------+
 
 
-+--------------------------------------------------------------+
-; Minimum Propagation Delay                                    ;
-+------------+-------------+--------+--------+--------+--------+
-; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+------------+-------------+--------+--------+--------+--------+
-; A          ; COUT        ; 9.840  ; 9.840  ; 9.840  ; 9.840  ;
-; A          ; OUT         ; 10.708 ; 10.708 ; 10.708 ; 10.708 ;
-; B          ; COUT        ; 6.006  ;        ;        ; 6.006  ;
-; B          ; OUT         ; 6.343  ; 6.343  ; 6.343  ; 6.343  ;
-; CIN        ; COUT        ; 9.344  ;        ;        ; 9.344  ;
-; CIN        ; OUT         ; 10.383 ; 10.383 ; 10.383 ; 10.383 ;
-; ENA        ; COUT        ; 5.702  ; 5.702  ; 5.702  ; 5.702  ;
-; ENA        ; OUT         ; 6.570  ; 6.570  ; 6.570  ; 6.570  ;
-; ENB        ; COUT        ; 6.155  ;        ;        ; 6.155  ;
-; ENB        ; OUT         ; 6.211  ; 6.211  ; 6.211  ; 6.211  ;
-; F0         ; COUT        ; 9.857  ;        ;        ; 9.857  ;
-; F0         ; OUT         ; 9.655  ; 10.327 ; 10.327 ; 9.655  ;
-; F1         ; COUT        ; 5.917  ;        ;        ; 5.917  ;
-; F1         ; OUT         ; 5.814  ; 6.487  ; 6.487  ; 5.814  ;
-; INVA       ; COUT        ; 9.615  ; 9.615  ; 9.615  ; 9.615  ;
-; INVA       ; OUT         ; 10.483 ; 10.483 ; 10.483 ; 10.483 ;
-+------------+-------------+--------+--------+--------+--------+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; COUT        ; 9.098 ;       ;       ; 9.098 ;
+; A          ; O           ; 9.236 ; 9.236 ; 9.236 ; 9.236 ;
+; B          ; COUT        ; 5.389 ;       ;       ; 5.389 ;
+; B          ; O           ; 5.528 ; 5.528 ; 5.528 ; 5.528 ;
+; CIN        ; COUT        ; 5.352 ;       ;       ; 5.352 ;
+; CIN        ; O           ; 5.487 ; 5.487 ; 5.487 ; 5.487 ;
+; EN         ; COUT        ; 9.181 ;       ;       ; 9.181 ;
+; EN         ; O           ; 9.320 ;       ;       ; 9.320 ;
++------------+-------------+-------+-------+-------+-------+
 
 
 ----------------------------
@@ -204,22 +188,14 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; A          ; COUT        ; 5.498 ; 5.498 ; 5.498 ; 5.498 ;
-; A          ; OUT         ; 6.073 ; 6.073 ; 6.073 ; 6.073 ;
-; B          ; COUT        ; 3.057 ;       ;       ; 3.057 ;
-; B          ; OUT         ; 3.627 ; 3.627 ; 3.627 ; 3.627 ;
-; CIN        ; COUT        ; 5.235 ;       ;       ; 5.235 ;
-; CIN        ; OUT         ; 5.762 ; 5.762 ; 5.762 ; 5.762 ;
-; ENA        ; COUT        ; 2.911 ; 2.911 ; 2.911 ; 2.911 ;
-; ENA        ; OUT         ; 3.486 ; 3.486 ; 3.486 ; 3.486 ;
-; ENB        ; COUT        ; 3.114 ;       ;       ; 3.114 ;
-; ENB        ; OUT         ; 3.684 ; 3.684 ; 3.684 ; 3.684 ;
-; F0         ; COUT        ; 5.467 ;       ;       ; 5.467 ;
-; F0         ; OUT         ; 5.732 ; 5.732 ; 5.732 ; 5.732 ;
-; F1         ; COUT        ; 3.007 ;       ;       ; 3.007 ;
-; F1         ; OUT         ; 3.328 ; 3.328 ; 3.328 ; 3.328 ;
-; INVA       ; COUT        ; 5.342 ; 5.342 ; 5.342 ; 5.342 ;
-; INVA       ; OUT         ; 5.917 ; 5.917 ; 5.917 ; 5.917 ;
+; A          ; COUT        ; 5.099 ;       ;       ; 5.099 ;
+; A          ; O           ; 5.164 ; 5.164 ; 5.164 ; 5.164 ;
+; B          ; COUT        ; 2.776 ;       ;       ; 2.776 ;
+; B          ; O           ; 2.840 ; 2.840 ; 2.840 ; 2.840 ;
+; CIN        ; COUT        ; 2.764 ;       ;       ; 2.764 ;
+; CIN        ; O           ; 2.827 ; 2.827 ; 2.827 ; 2.827 ;
+; EN         ; COUT        ; 5.170 ;       ;       ; 5.170 ;
+; EN         ; O           ; 5.235 ;       ;       ; 5.235 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -228,22 +204,14 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; A          ; COUT        ; 5.498 ; 5.498 ; 5.498 ; 5.498 ;
-; A          ; OUT         ; 5.951 ; 5.951 ; 5.951 ; 5.951 ;
-; B          ; COUT        ; 3.057 ;       ;       ; 3.057 ;
-; B          ; OUT         ; 3.267 ; 3.267 ; 3.267 ; 3.267 ;
-; CIN        ; COUT        ; 5.235 ;       ;       ; 5.235 ;
-; CIN        ; OUT         ; 5.762 ; 5.762 ; 5.762 ; 5.762 ;
-; ENA        ; COUT        ; 2.911 ; 2.911 ; 2.911 ; 2.911 ;
-; ENA        ; OUT         ; 3.364 ; 3.364 ; 3.364 ; 3.364 ;
-; ENB        ; COUT        ; 3.114 ;       ;       ; 3.114 ;
-; ENB        ; OUT         ; 3.208 ; 3.208 ; 3.208 ; 3.208 ;
-; F0         ; COUT        ; 5.467 ;       ;       ; 5.467 ;
-; F0         ; OUT         ; 5.446 ; 5.732 ; 5.732 ; 5.446 ;
-; F1         ; COUT        ; 3.007 ;       ;       ; 3.007 ;
-; F1         ; OUT         ; 3.040 ; 3.328 ; 3.328 ; 3.040 ;
-; INVA       ; COUT        ; 5.342 ; 5.342 ; 5.342 ; 5.342 ;
-; INVA       ; OUT         ; 5.795 ; 5.795 ; 5.795 ; 5.795 ;
+; A          ; COUT        ; 5.099 ;       ;       ; 5.099 ;
+; A          ; O           ; 5.164 ; 5.164 ; 5.164 ; 5.164 ;
+; B          ; COUT        ; 2.776 ;       ;       ; 2.776 ;
+; B          ; O           ; 2.840 ; 2.840 ; 2.840 ; 2.840 ;
+; CIN        ; COUT        ; 2.764 ;       ;       ; 2.764 ;
+; CIN        ; O           ; 2.827 ; 2.827 ; 2.827 ; 2.827 ;
+; EN         ; COUT        ; 5.170 ;       ;       ; 5.170 ;
+; EN         ; O           ; 5.235 ;       ;       ; 5.235 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -257,28 +225,20 @@ No paths to report.
 +------------------+-------+------+----------+---------+---------------------+
 
 
-+--------------------------------------------------------------+
-; Progagation Delay                                            ;
-+------------+-------------+--------+--------+--------+--------+
-; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
-+------------+-------------+--------+--------+--------+--------+
-; A          ; COUT        ; 9.840  ; 9.840  ; 9.840  ; 9.840  ;
-; A          ; OUT         ; 10.985 ; 10.985 ; 10.985 ; 10.985 ;
-; B          ; COUT        ; 6.006  ;        ;        ; 6.006  ;
-; B          ; OUT         ; 7.146  ; 7.146  ; 7.146  ; 7.146  ;
-; CIN        ; COUT        ; 9.344  ;        ;        ; 9.344  ;
-; CIN        ; OUT         ; 10.383 ; 10.383 ; 10.383 ; 10.383 ;
-; ENA        ; COUT        ; 5.702  ; 5.702  ; 5.702  ; 5.702  ;
-; ENA        ; OUT         ; 6.847  ; 6.847  ; 6.847  ; 6.847  ;
-; ENB        ; COUT        ; 6.155  ;        ;        ; 6.155  ;
-; ENB        ; OUT         ; 7.295  ; 7.295  ; 7.295  ; 7.295  ;
-; F0         ; COUT        ; 9.857  ;        ;        ; 9.857  ;
-; F0         ; OUT         ; 10.327 ; 10.327 ; 10.327 ; 10.327 ;
-; F1         ; COUT        ; 5.917  ;        ;        ; 5.917  ;
-; F1         ; OUT         ; 6.487  ; 6.487  ; 6.487  ; 6.487  ;
-; INVA       ; COUT        ; 9.615  ; 9.615  ; 9.615  ; 9.615  ;
-; INVA       ; OUT         ; 10.760 ; 10.760 ; 10.760 ; 10.760 ;
-+------------+-------------+--------+--------+--------+--------+
++----------------------------------------------------------+
+; Progagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; COUT        ; 9.098 ;       ;       ; 9.098 ;
+; A          ; O           ; 9.236 ; 9.236 ; 9.236 ; 9.236 ;
+; B          ; COUT        ; 5.389 ;       ;       ; 5.389 ;
+; B          ; O           ; 5.528 ; 5.528 ; 5.528 ; 5.528 ;
+; CIN        ; COUT        ; 5.352 ;       ;       ; 5.352 ;
+; CIN        ; O           ; 5.487 ; 5.487 ; 5.487 ; 5.487 ;
+; EN         ; COUT        ; 9.181 ;       ;       ; 9.181 ;
+; EN         ; O           ; 9.320 ;       ;       ; 9.320 ;
++------------+-------------+-------+-------+-------+-------+
 
 
 +----------------------------------------------------------+
@@ -286,22 +246,14 @@ No paths to report.
 +------------+-------------+-------+-------+-------+-------+
 ; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +------------+-------------+-------+-------+-------+-------+
-; A          ; COUT        ; 5.498 ; 5.498 ; 5.498 ; 5.498 ;
-; A          ; OUT         ; 5.951 ; 5.951 ; 5.951 ; 5.951 ;
-; B          ; COUT        ; 3.057 ;       ;       ; 3.057 ;
-; B          ; OUT         ; 3.267 ; 3.267 ; 3.267 ; 3.267 ;
-; CIN        ; COUT        ; 5.235 ;       ;       ; 5.235 ;
-; CIN        ; OUT         ; 5.762 ; 5.762 ; 5.762 ; 5.762 ;
-; ENA        ; COUT        ; 2.911 ; 2.911 ; 2.911 ; 2.911 ;
-; ENA        ; OUT         ; 3.364 ; 3.364 ; 3.364 ; 3.364 ;
-; ENB        ; COUT        ; 3.114 ;       ;       ; 3.114 ;
-; ENB        ; OUT         ; 3.208 ; 3.208 ; 3.208 ; 3.208 ;
-; F0         ; COUT        ; 5.467 ;       ;       ; 5.467 ;
-; F0         ; OUT         ; 5.446 ; 5.732 ; 5.732 ; 5.446 ;
-; F1         ; COUT        ; 3.007 ;       ;       ; 3.007 ;
-; F1         ; OUT         ; 3.040 ; 3.328 ; 3.328 ; 3.040 ;
-; INVA       ; COUT        ; 5.342 ; 5.342 ; 5.342 ; 5.342 ;
-; INVA       ; OUT         ; 5.795 ; 5.795 ; 5.795 ; 5.795 ;
+; A          ; COUT        ; 5.099 ;       ;       ; 5.099 ;
+; A          ; O           ; 5.164 ; 5.164 ; 5.164 ; 5.164 ;
+; B          ; COUT        ; 2.776 ;       ;       ; 2.776 ;
+; B          ; O           ; 2.840 ; 2.840 ; 2.840 ; 2.840 ;
+; CIN        ; COUT        ; 2.764 ;       ;       ; 2.764 ;
+; CIN        ; O           ; 2.827 ; 2.827 ; 2.827 ; 2.827 ;
+; EN         ; COUT        ; 5.170 ;       ;       ; 5.170 ;
+; EN         ; O           ; 5.235 ;       ;       ; 5.235 ;
 +------------+-------------+-------+-------+-------+-------+
 
 
@@ -330,10 +282,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 16    ; 16   ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 8     ; 8    ;
 ; Unconstrained Output Ports      ; 2     ; 2    ;
-; Unconstrained Output Port Paths ; 16    ; 16   ;
+; Unconstrained Output Port Paths ; 8     ; 8    ;
 +---------------------------------+-------+------+
 
 
@@ -343,9 +295,33 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Apr 21 13:00:50 2025
+    Info: Processing started: Mon Apr 21 13:38:11 2025
 Info: Command: quartus_sta MIC1 -c MIC1
 Info: qsta_default_script.tcl version: #1
+Warning (20013): Ignored assignments for entity "ula_1bit" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity ula_1bit -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity ula_1bit -section_id Top was ignored
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'MIC1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
@@ -373,10 +349,10 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 28 warnings
     Info: Peak virtual memory: 4536 megabytes
-    Info: Processing ended: Mon Apr 21 13:00:52 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Mon Apr 21 13:38:12 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
