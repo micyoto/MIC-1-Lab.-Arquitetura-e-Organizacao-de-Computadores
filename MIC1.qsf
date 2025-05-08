@@ -58,17 +58,17 @@ set_global_assignment -name BDF_FILE ula_1bit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ula_1bit.vwf
 set_global_assignment -name BDF_FILE full_adder_1bit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_1bit_b.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity ula_1bit -section_id Top
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity ula_1bit -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity ula_1bit -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -entity ula_1bit -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE full_adder_1bit.vwf
 set_global_assignment -name BDF_FILE ula_8bit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ula_8bit.vwf
 set_global_assignment -name BDF_FILE ula_32bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ula_32bit.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_ADD.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_AND.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_CONSTANTS.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ULA_8bit_OR.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/micha/Downloads/Mandinha/Waveform.vwf"
-set_global_assignment -name VECTOR_WAVEFORM_FILE ula_32bit.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/micha/Downloads/Mandinha/ula_32bit.vwf"
