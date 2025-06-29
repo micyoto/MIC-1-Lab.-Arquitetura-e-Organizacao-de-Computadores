@@ -946,10 +946,6 @@ applicable agreement for further details.
 	(pt 2312 176)
 )
 (connector
-	(pt 632 320)
-	(pt 632 144)
-)
-(connector
 	(pt 312 144)
 	(pt 632 144)
 	(bus)
@@ -960,7 +956,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "INPUT[1]" (rect 640 240 686 252)(font "Arial" ))
+	(text "INPUT[1]" (rect 536 104 582 116)(font "Arial" ))
 	(pt 648 320)
 	(pt 632 320)
 )
@@ -968,6 +964,11 @@ applicable agreement for further details.
 	(text "OUTPUT[1]" (rect 776 263 788 319)(font "Arial" )(vertical))
 	(pt 792 320)
 	(pt 792 200)
+)
+(connector
+	(text "INPUT[1]" (rect 616 265 628 311)(font "Arial" )(vertical))
+	(pt 632 320)
+	(pt 632 144)
 )
 (junction (pt 312 144))
 (junction (pt 296 176))
